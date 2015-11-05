@@ -1,0 +1,53 @@
+.viz-panel {
+
+  position: relative;
+  min-height: 339px;
+  // padding-bottom: 25px;
+
+  .panel-heading {
+
+    .sub-option {
+
+      line-height: 2em;
+
+      label.ui-checkbox {
+
+        margin-bottom: 0;
+        margin-left: 25px;
+
+        span {
+
+          &:before {
+            margin-left: -15px;
+            margin-right: 5px;
+          }
+
+          &:after {
+            top: 11px;
+            left: -10px;
+            margin-left: 0px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .panel-body {
+
+    .c3-axis-x {
+
+      overflow: visible;
+
+      .c3-axis-x-label {
+        font-size: 12px;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,58 @@
+thead {
+  border: 1px solid $gray-lighter;;
+  border-bottom: 2px solid $gray-lighter;;
+}
+
+th.tablesort-sortable {
+  user-select: none;
+  cursor: pointer;
+}
+
+table .tablesort-sortable:after {
+  content:"";
+  float:right;
+  margin-right: 5px;
+  margin-top: 8px;
+  visibility: hidden;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+
+  border-top: none;
+  border-bottom: 4px solid;
+}
+
+table .tablesort-desc:after{
+  border-top: 4px solid;
+  border-bottom: none;
+}
+
+table .tablesort-asc,table .tablesort-desc {
+  @extend .bg-info;
+}
+
+table .tablesort-sortable:hover:after, table .tablesort-asc:after, table .tablesort-desc:after {
+  visibility: visible;
+}
+
+/*
+* Styling for the table row shown in empty tables
+*/
+
+/* The row is always added as the first row in a table
+ Hide it by default */
+.showIfLast {
+  display: none;
+}
+
+/* Only show it if it is also the last row of the table. */
+.showIfLast:last-child {
+  display: table-row;
+}
+
+.showIfLast td {
+  text-align: center;
+}
+
+.showIfLast td:after {
+  content: "There are no activities to display.";
+}

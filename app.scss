@@ -1,0 +1,47 @@
+$icon-font-path: "slim/client/fonts/";
+$footer-height: 40px;
+
+// bower:css
+@import "bower_components/c3/c3.css";
+// endbower
+
+@import "slim/client/fonts/themify-icons/themify-icons.css";
+
+// The order of these includes is NOT trivial. (1. main, 2. bootstrap, 3. ui)
+@import "slim/client/styles/main.scss";
+@import "slim/client/styles/bootstrap/bootstrap";
+@import "slim/client/styles/ui.scss";
+
+@import "styles/global";
+@import "styles/animations";
+
+// Partial SCSS
+@import "styles/scorecards";
+@import "styles/forms";
+@import "styles/tablesort";
+@import "partial/oos/oos";
+/*@import "partial/home/home";*/
+
+.text-dark {
+  color: $text-color;
+  text-shadow: none;
+}
+
+.heatmap {
+  white-space: nowrap;
+  table {
+    color: white;
+    text-shadow: black 0.05em 0.05em 0.1em;
+    font-weight: bold;
+    tr {
+      th:last-child {
+        border-left: 3px solid #ddd;
+      }
+    }
+    tfoot {
+      tr:last-child {
+        border-top: 3px solid #ddd;
+      }
+    }
+  }
+}
