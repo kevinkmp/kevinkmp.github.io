@@ -6,8 +6,10 @@ var data = {
 };
 
 function drawChart() {
-  c3.generate(
+  var chart = c3.generate(
     bindto: '#chart',
     data: data
   );
 }
+
+drawChart();
