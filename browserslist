@@ -1,6 +1,0 @@
-# Line Break Seperate list of supported browser versions
-# Used by auto-prefixer
-# https://github.com/ai/browserslist
-
-> 5%
-IE >= 8
